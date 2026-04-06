@@ -14,6 +14,7 @@ form.addEventListener("submit", function (event) {
         email: emailValue,
         password: passwordValue
     }
+    localStorage.setItem("user", JSON.stringify(newUser));
     console.log(newUser);
 })
 
